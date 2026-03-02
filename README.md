@@ -14,6 +14,12 @@ python -m pip install -r requirements.txt
 
 Usage
 
+- Run graphical interface (GUI):
+
+```
+python main.py --gui
+```
+
 - Run interactive CLI:
 
 ```
@@ -28,11 +34,12 @@ python main.py --demo --topic "artificial intelligence"
 
 Files
 
-- `news_retriever.py`: calls NewsAPI
-- `embedding_engine.py`: embeddings via HuggingFaceEmbeddings and Chroma vector store (LangChain)
-- `summarizer.py`: provides extractive (LexRank) and abstractive (transformers) summarizers
-- `user_manager.py`: stores user preferences and history in JSON
-- `main.py`: CLI and demo
+- `news_retriever.py`: calls NewsAPI everything endpoint
+- `embedding_engine.py`: embeddings via sentence-transformers and Chroma vector store
+- `summarizer.py`: extractive (LexRank fallback) and abstractive (HuggingFace transformers) summarizers
+- `user_manager.py`: stores user preferences and search history in JSON
+- `main.py`: CLI, demo, and GUI launcher
+- `gui.py`: Tkinter-based graphical interface with search, save topics, and history
 
 Notes
 
