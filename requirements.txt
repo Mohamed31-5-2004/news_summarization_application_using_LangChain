@@ -1,0 +1,7 @@
+langchain
+chromadb
+sentence-transformers
+transformers
+newsapi-python
+sumy
+requests
